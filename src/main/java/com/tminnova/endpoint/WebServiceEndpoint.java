@@ -17,8 +17,11 @@ public class WebServiceEndpoint {
 	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "inputSOATest")
 	@ResponsePayload
 	public OutputSOATest hello(@RequestPayload InputSOATest request) {
+		
+		System.out.println("request: " + request.toString());
 
 		String outputString = "Hello " + request.getTest() + "!";
+		System.out.println("outputString: " + outputString);
 
 		ObjectFactory factory = new ObjectFactory();
 		OutputSOATest response = factory.createOutputSOATest();

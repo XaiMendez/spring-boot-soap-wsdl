@@ -59,7 +59,7 @@
 <!--Define service -->
 	<wsdl:service name="SOATestEndpointService">
 		<wsdl:port name="SOATestEndpoint" binding="tns:SOATestBinding">
-			<soap:address location="http://localhost:8080/javainuse/ws/helloWorldExample" />
+			<soap:address location="http://localhost:8080/spring-boot-soap-wsdl/services/helloworld" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
